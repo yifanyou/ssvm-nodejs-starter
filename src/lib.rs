@@ -6,3 +6,10 @@ pub fn say(s: &str) -> String {
   let r = String::from("hello ");
   return r + s;
 }
+
+#[wasm_bindgen]
+pub fn says(s1: &str, s2: $str) -> String {
+  println!("The Rust function say() received {} {}", s1, s2);
+  let r = String::from("hello ");
+  return r + s1 + s2;
+}
