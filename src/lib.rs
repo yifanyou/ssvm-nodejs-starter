@@ -7,6 +7,7 @@ pub fn say(s: &str) -> String {
   return r + s;
 }
 
+// new func
 #[wasm_bindgen]
 pub fn says(s1: &str, s2: $str) -> String {
   println!("The Rust function say() received {} {}", s1, s2);
